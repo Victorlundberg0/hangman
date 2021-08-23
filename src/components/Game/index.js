@@ -174,7 +174,7 @@ function Game(props) {
       <ImageCounter lives={lives}></ImageCounter>
       <p className="titles" id="points">Current points: {points}</p>
       <div id="hint-button"><Button variant="contained" disabled={disableButton} onClick={handleHint}>Buy Hint for 20 Points</Button></div>
-      {openPopUp && <EndGame score={points} message={message} nextGame={newGame}></EndGame>}
+      {openPopUp && <EndGame score={points} message={message} word={wordData[0].word} nextGame={newGame}></EndGame>}
       <ToastContainer />
       {showKeyboard && <div id="virtual-keyboard"><Keyboard layout={keyboardLayout} onKeyPress={virtualInput} ></Keyboard></div>}
       <div id="keyboard-button"> <Button variant="contained" onClick={() => setShowKeyboard(true)}><KeyboardIcon></KeyboardIcon></Button></div>

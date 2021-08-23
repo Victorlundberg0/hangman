@@ -41,6 +41,7 @@ function EndGame(props) {
       <div id="back-ground"></div>
       <div id="message-div">
         <h2 className="titles" id="message">{props.message}</h2>
+        <p className="titles" id="word">The word was: {props.word}</p>
         <p className="titles" id="score">Score: {props.score}</p>
         <Button className="titles" id="next" variant="contained" onClick={nextGame}>New Word</Button>
       </div>

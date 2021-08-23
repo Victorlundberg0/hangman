@@ -26,7 +26,7 @@
 #message-div{
     opacity: 1;
     position: absolute;
-    height: 25vh;
+    height: 27vh;
     width:30vw;
     background:white;
     animation: fade 1s;
@@ -60,4 +60,9 @@
 
 #score{
     color: black;
+}
+
+#word{
+    color: black;
+    transform: translate(0,-1vh);
 }
