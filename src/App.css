@@ -2,9 +2,15 @@
 
 .titles {
     font-family: 'Bubblegum Sans', cursive;
+    color: white;
 }
 
 *{
     margin:0;
     padding:0;
+}
+
+#saved{
+    position: absolute;
+    z-index: 20;
 }

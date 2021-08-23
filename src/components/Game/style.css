@@ -1,14 +1,15 @@
 #game{
     height: 100vh;
     width:100vw;
-    background-color: darkgray;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    background: url('../../images/blackboard.jpg') no-repeat center;
+    background-size: cover;
 }
 
-#word{
+#empty-word{
     position:absolute;
     top:20vh;
     font-size: 10vh;;
@@ -16,6 +17,51 @@
 
 #mini-header{
     position:absolute;
-    top:10vh;
+    top:6vh;
     font-size: 4vh;; 
+}
+
+#lives{
+    position:absolute;
+    top:50vh;
+    font-size: 4vh;
+}
+
+#keypress {
+    position:absolute;
+    top:85vh;
+    font-size: 2vh;
+}
+
+#hint {
+    position:absolute;
+    top:17vh;
+    font-size: 2vh;
+}
+
+#points{
+    position:absolute;
+    top:11.7vh;
+    font-size: 3vh;
+}
+
+#input-field{
+    position:absolute;
+    top:90vh;
+}
+
+#transition {
+    background:black;
+    height: 100vh;
+    width:100vw;
+    z-index: 10;
+    animation: fadeout 4s;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
 }
