@@ -3,13 +3,13 @@
  
 This game was created using reactJS.
  
-## dependencies, api's and components
+## Dependencies, api's and components
  
 The game uses the free api: https://random-words-api.vercel.app/word to fetch a random word.
  
 For most UI components material UI is used, other components used are: react-Toastify (warning messages), react-spinners (loading animation),react-simple-keyboard(on-screen input).
  
-## How the game it works
+## How the game works
  
 This is a game of hangman where the user gets a random word to guess it using keyboard input, done either by an actual keyboard or the on-screen keyboard, making it suitable for mobile.
  
