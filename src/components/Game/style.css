@@ -35,8 +35,30 @@
 
 #hint {
     position:absolute;
-    top:17vh;
-    font-size: 2vh;
+    bottom:4vh;
+    font-size: 3vh;
+}
+
+#hint-button {
+    position: absolute;
+    bottom:2vh ;
+}
+
+#keyboard-button{
+    position: absolute;
+    bottom:2vh ;
+    right:2vh;
+}
+
+#virtual-keyboard{
+    position: absolute;
+    bottom:0;
+    width:100vw;
+    z-index: 10;
+}
+
+#hint-button .Mui-disabled {
+    opacity:0 !important;
 }
 
 #points{
@@ -45,9 +67,13 @@
     font-size: 3vh;
 }
 
-#input-field{
+#input-parent{
     position:absolute;
     top:90vh;
+}
+
+#input-field{
+    color:white !important;
 }
 
 #transition {
@@ -65,3 +91,24 @@
     from { opacity: 1; }
     to   { opacity: 0; }
 }
+
+#spinner {
+ position: relative;
+ top:50vh;
+}
+
+#spinner p {
+    font-family: 'Bubblegum Sans', cursive;
+    position: absolute;
+    bottom:-80px;
+    left:-30px;
+    width:200px;
+    animation: text 3s infinite;
+}
+
+@keyframes text {
+    0%   { opacity:0.8; }
+    50%  { opacity:0.2; }
+    100% { opacity:0.8; }
+}
+

@@ -8,11 +8,11 @@ import image5 from '../../../images/5.png';
 import image6 from '../../../images/6.png';
 import './style.css';
 function ImageCounter(props) {
-    let imageList = [image0,image1,image2,image3,image4,image5,image6];
+    let imageList = [image0, image1, image2, image3, image4, image5, image6];
     const [lives, setLives] = React.useState(6);
     useEffect(() => {
-      setLives(props.lives);
-      }, [props.lives]);
+        setLives(props.lives);
+    }, [props.lives]);
     return (
         <div id="image-counter">
             <img id="images" src={imageList[lives]} alt="hangman" />

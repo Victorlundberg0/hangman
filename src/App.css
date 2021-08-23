@@ -13,4 +13,12 @@
 #saved{
     position: absolute;
     z-index: 20;
+    position: absolute;
+    bottom:2vh;
+    left:2vh;
+}
+
+#saved p {
+    font-family: 'Bubblegum Sans', cursive;
+    color: white;
 }

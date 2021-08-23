@@ -15,8 +15,8 @@ function Menu(props) {
 
   return (
     <div id="menu">
-      {playTransition ? <div id="transitions"></div> :""}
-      <h1 id="title" className="titles">HANGMAN</h1>
+      {playTransition && <div id="transitions"></div>}
+      <h1 id="title" className="titles">VICTOR'S HANGMAN</h1>
       <img id="hang-man-image" src={HangManImage} alt="hangman" />
       <Button onClick={handleClick} className="titles" id="start" variant="contained">Play</Button>
     </div>
